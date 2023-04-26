@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import CurrencySwitcher from "./Components/CurrencySwitcher";
 import Display from "./Components/Display";
+import Form from "./Components/Form";
 
 import "./App.css";
 
@@ -19,6 +20,7 @@ function App() {
         handleChangeCurrency={handleCurrencyChange}
         currency={currency}
       />
+      <Form />
     </div>
   );
 }
