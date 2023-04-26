@@ -1,12 +1,7 @@
-import React from "react";
+import React from 'react';
 
-
-function Display(props) {
-  return (
-    <div>
-      <p>Current currency  is {props.currency}</p>
-    </div>
-  );
-}
+const Display = (props) => {
+  return <b><p> Current currency is {props.currency}. </p> </b>;
+};
 
 export default Display;

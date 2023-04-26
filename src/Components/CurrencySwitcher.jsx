@@ -1,12 +1,20 @@
-import React from "react";
+import React from 'react';
 
-function CurrencySwitcher(props) {
-    return (
-        <button onClick={props.handleChangeCurrency}>
-          Current currency is {props.currency}. Change it!
-        </button>
-      )
-}
+const CurrencySwitcher = (props) => {
+  const { currency, handleChangeCurrency } = props;
+
+  let buttonText;
+  if (currency === '€') {
+    buttonText = 'Switch to $';
+  } else if (currency === '$') {
+    buttonText = 'Switch to €';
+  }
+
+  return (
+    <button onClick={handleChangeCurrency}>
+      {buttonText}
+    </button>
+  );
+};
 
 export default CurrencySwitcher;
-
