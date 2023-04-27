@@ -1,0 +1,91 @@
+{
+    "clipboard" : {
+        "onCopy":"The onCopy event in React is used to handle events 
+        when text is copied from a website or application. It is triggered when a user 
+        copies a selection of text, whether it is via the browser's context menu or using 
+        the keyboard shortcut Ctrl+C (or Cmd+C on Mac).
+        In React, the onCopy event can be used on any element 
+        that can contain text, such as a div, span, or input element. 
+        When the event is triggered, a function is called that can perform any necessary actions, 
+        such as logging the copied text or displaying a message to the user.
+        It's worth noting that the onCopy event can be used in combination with the 
+        preventDefault method to prevent the default copy behavior. 
+        This can be useful in situations where you want to customize 
+        the copied text or prevent the user from copying certain content.",
+
+        "onCut":"In React, the onCut event is used to handle the cut operation performed on a text element, 
+        such as an input field or a text area. When the user selects and cuts some text, the onCut event 
+        is triggered, and any associated event handler function is executed.To use onCut in React, you need 
+        to add theevent listener to the target element. This can be done using JSX by defining a function 
+        that handles the event and passing it as a prop to the element.In addition to logging messages,
+         onCut event handlers can be used to update state, trigger API calls, or perform any other necessary actions. The event object passed to the event handler function contains information about the cut operation,
+         such as the cut text and the target element.
+        Overall, the onCut event is a useful tool in 
+        React for handling cut operations on text elements
+         and performing actions in response to those operations",
+        "onPaste":"The onPaste event in React is used to handle events when text is pasted into a website or application.
+         It is triggered when a user pastes a selection of text, 
+        whether it is via the browser's context menu or using the keyboard shortcut Ctrl+V (or Cmd+V on Mac).
+        In React, the onPaste event can be used on any element that can contain text, such as a div, span, or 
+        input element. When the event is triggered, a function is called that can perform any necessary actions, 
+        such as validating the pasted text or modifying it in some way.
+        It's worth noting that the onPaste event can also be used in combination with the 
+        preventDefault method to prevent the default paste behavior. This can be useful in
+         situations where you want to customize the pasted text or prevent the user from pasting
+          certain content. However, you should be careful not to disable this feature entirely, 
+          as it can be an important accessibility feature for users who cannot use a mouse or keyboard short
+          cuts.",
+    },
+
+    "Composition":{
+        "onCompositionEnd":"In React, the onCompositionEnd event is used to handle the end of a composition operation, such as when the user has finished typing non-Latin characters or has completed composing a complex character with multiple keystrokes. When this event occurs, it is an indication that the user has finished composing the character sequence, and the component can update its state accordingly.To use onCompositionEnd in React, you need to add the event listener to the target element. This can be done using JSX by 
+        defining a function that handles the event and passing it as a prop to the element:When the user finishes composing complex characters, the handleCompositionEnd function will be called, and the message "Composition ended!" will be logged to the console.
+        The onCompositionEnd event is often used in conjunction with other events such as onCompositionStart and onInput. These events allow developers to handle composition events and update the state of the component accordingly.
+        Overall, the onCompositionEnd event is an essential tool in React for handling complex character input and ensuring that the component updates its state correctly. By using this event, developers can provide a better user experience for non-Latin character input and ensure that the component behaves as expected.
+        ",
+        "onCompositionStart":"In React, the onCompositionStart event is used to handle the start of a composition operation, such as when the user is typing non-Latin characters or composing complex characters with multiple keystrokes. When this event occurs, it is an indication that the user is in the middle of typing a complex sequence of characters, and the component should wait until the composition is finished before updating its state.
+        To use onCompositionStart in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element.
+        When the user starts composing complex characters, the handleCompositionStart function will be called, and the message "Composition started!" will be logged to the console.
+        The onCompositionStart event is often used in conjunction with other events such as onCompositionEnd and onInput. These events allow developers to handle composition events and update the state of the component accordingly.
+        Overall, the onCompositionStart event is an essential tool in React for handling complex character input and ensuring that the component updates its state correctly.",
+        "onCompositionUpdate":"In React, the onCompositionUpdate event is used to handle updates during a composition operation, such as when the user is typing non-Latin characters or composing complex characters with multiple keystrokes. When this event occurs, it is an indication that the user is still in the middle of composing the character sequence, and the component should wait until the composition is finished before updating its state.
+        When the user is in the middle of composing complex characters, the handleCompositionUpdate function will be called, and the message "Composition updated!" will be logged to the console.
+        The onCompositionUpdate event is often used in conjunction with other events such as onCompositionStart and onCompositionEnd. These events allow developers to handle composition events and update the state of the component accordingly.
+        Overall, the onCompositionUpdate event is an essential tool in React for handling complex character input and ensuring that the component updates its state correctly. By using this event, developers can provide a better user experience for non-Latin character input and ensure that the component behaves as expected during composition.
+        To use onCompositionUpdate in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:",
+},
+        "keyboard":{
+            "onKeyDown":"In React, the onKeyDown event is used to handle when a key is pressed down. This event can be useful for a variety of purposes, such as capturing specific key combinations or preventing certain actions from occurring.
+            To use onKeyDown in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:When a key is pressed down while the input element has focus, the handleKeyDown function will be called, and the message "Key pressed!" along with the key that was pressed will be logged to the console.
+            The onKeyDown event can be used in many different ways, such as capturing specific key combinations to trigger certain actions or preventing certain actions from occurring. It can be particularly useful for building interactive web applications and games.
+            Overall, the onKeyDown event is an essential tool in React for handling key presses and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces. ",
+            "onKeyPress":"In React, the onKeyPress event is used to handle when a key is pressed down and a character is entered. This event can be useful for capturing user input and triggering actions based on the entered character.
+            To use onKeyPress in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:
+            When a character is entered while the input element has focus, the handleKeyPress function will be called, and the message "Character entered!" along with the entered character will be logged to the console.
+            The onKeyPress event can be used in many different ways, such as validating user input or triggering certain actions based on the entered character. It can be particularly useful for building forms and capturing user input.
+            Overall, the onKeyPress event is an essential tool in React for handling character input and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces.",
+            "onKeyUp":"In React, the onKeyUp event is used to handle when a key is released after it has been pressed. This event can be useful for a variety of purposes, such as triggering actions based on specific key combinations or checking for the release of certain keys.When a key is released while the input element has focus, the handleKeyUp function will be called, and the message "Key released!" along with the key that was released will be logged to the console.
+            The onKeyUp event can be used in many different ways, such as triggering specific actions when a certain key combination is pressed or updating the state of a component based on the released key. It can be particularly useful for building interactive web applications and games.
+            Overall, the onKeyUp event is an essential tool in React for handling key releases and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces.
+            To use onKeyUp in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:",
+        },
+
+        "focus":{
+            "onfocus":"In React, the onFocus event is used to handle when an element receives focus, typically through a user clicking on it or tabbing to it. This event can be useful for capturing user interaction and triggering certain actions or changes in the UI.
+            To use onFocus in React, you need to add the event listener to the target element. 
+            This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:When the input element receives focus, the handleFocus function will be called, and the message "Element focused!" will be logged to the console.
+            The onFocus event can be used in many different ways, such as triggering certain UI changes or showing additional information when an element receives focus. It can be particularly useful for building forms and guiding user interaction.
+            Overall, the onFocus event is an important tool in React for capturing user interaction and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces.",
+            "onBlur":"In React, the onBlur event is used to handle when an element loses focus, typically when a user clicks outside of the element or tabs away from it. This event can be useful for capturing user interaction and triggering certain actions or changes in the UI.
+            To use onBlur in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element,
+            he onBlur event can be used in many different ways, such as triggering certain UI changes or validating user input when an element loses focus. It can be particularly useful for building forms and guiding user interaction.
+            Overall, the onBlur event is an important tool in React for capturing user interaction and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces."
+        },
+
+        "form":{
+            "onChange":,
+            "onInput":,
+            "onSubmit":,
+        }
+   
+}
