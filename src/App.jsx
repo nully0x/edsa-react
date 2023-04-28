@@ -7,10 +7,17 @@ import "./App.css";
 function App() {
   const [currency, setCurrency] = useState("EUR");
 
+  //  const handleCurrencyChange = () => {
+  //   //TODO: using traditional if else statement determine the new currency
+  // setCurrency(currency === "EUR" ? "USD" : "EUR");
+  // };
+  
   const handleCurrencyChange = () => {
-    //TODO: using traditional if else statement determine the new currency
-    setCurrency(currency === "EUR" ? "USD" : "EUR");
-  };
+    let newCurrency;
+     if (currency === "EURO") {newCurrency = "DOLLAR";}
+     else { newCurrency = "EORO"; }
+     setCurrency(newCurrency);};
+
 
   return (
     <div>
@@ -24,5 +31,3 @@ function App() {
 }
 
 export default App;
-
-
