@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {React, useState } from 'react'
 import CurrencySwitcher from './components/CurrencySwitcher';
 import Display from './components/Display';
 import Form from './components/forms';
