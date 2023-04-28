@@ -1,0 +1,148 @@
+{
+    "clipboard" : {
+        "onCopy":"The onCopy event in React is used to handle events 
+        when text is copied from a website or application. It is triggered when a user 
+        copies a selection of text, whether it is via the browser's context menu or using 
+        the keyboard shortcut Ctrl+C (or Cmd+C on Mac).
+        In React, the onCopy event can be used on any element 
+        that can contain text, such as a div, span, or input element. 
+        When the event is triggered, a function is called that can perform any necessary actions, 
+        such as logging the copied text or displaying a message to the user.
+        It's worth noting that the onCopy event can be used in combination with the 
+        preventDefault method to prevent the default copy behavior. 
+        This can be useful in situations where you want to customize 
+        the copied text or prevent the user from copying certain content.",
+
+        "onCut":"In React, the onCut event is used to handle the cut operation performed on a text element, 
+        such as an input field or a text area. When the user selects and cuts some text, the onCut event 
+        is triggered, and any associated event handler function is executed.To use onCut in React, you need 
+        to add theevent listener to the target element. This can be done using JSX by defining a function 
+        that handles the event and passing it as a prop to the element.In addition to logging messages,
+         onCut event handlers can be used to update state, trigger API calls, or perform any other necessary actions. The event object passed to the event handler function contains information about the cut operation,
+         such as the cut text and the target element.
+        Overall, the onCut event is a useful tool in 
+        React for handling cut operations on text elements
+         and performing actions in response to those operations",
+        "onPaste":"The onPaste event in React is used to handle events when text is pasted into a website or application.
+         It is triggered when a user pastes a selection of text, 
+        whether it is via the browser's context menu or using the keyboard shortcut Ctrl+V (or Cmd+V on Mac).
+        In React, the onPaste event can be used on any element that can contain text, such as a div, span, or 
+        input element. When the event is triggered, a function is called that can perform any necessary actions, 
+        such as validating the pasted text or modifying it in some way.
+        It's worth noting that the onPaste event can also be used in combination with the 
+        preventDefault method to prevent the default paste behavior. This can be useful in
+         situations where you want to customize the pasted text or prevent the user from pasting
+          certain content. However, you should be careful not to disable this feature entirely, 
+          as it can be an important accessibility feature for users who cannot use a mouse or keyboard short
+          cuts.",
+    },
+
+    "Composition":{
+        "onCompositionEnd":"In React, the onCompositionEnd event is used to handle the end of a composition operation, such as when the user has finished typing non-Latin characters or has completed composing a complex character with multiple keystrokes. When this event occurs, it is an indication that the user has finished composing the character sequence, and the component can update its state accordingly.To use onCompositionEnd in React, you need to add the event listener to the target element. This can be done using JSX by 
+        defining a function that handles the event and passing it as a prop to the element:When the user finishes composing complex characters, the handleCompositionEnd function will be called, and the message "Composition ended!" will be logged to the console.
+        The onCompositionEnd event is often used in conjunction with other events such as onCompositionStart and onInput. These events allow developers to handle composition events and update the state of the component accordingly.
+        Overall, the onCompositionEnd event is an essential tool in React for handling complex character input and ensuring that the component updates its state correctly. By using this event, developers can provide a better user experience for non-Latin character input and ensure that the component behaves as expected.
+        ",
+        "onCompositionStart":"In React, the onCompositionStart event is used to handle the start of a composition operation, such as when the user is typing non-Latin characters or composing complex characters with multiple keystrokes. When this event occurs, it is an indication that the user is in the middle of typing a complex sequence of characters, and the component should wait until the composition is finished before updating its state.
+        To use onCompositionStart in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element.
+        When the user starts composing complex characters, the handleCompositionStart function will be called, and the message "Composition started!" will be logged to the console.
+        The onCompositionStart event is often used in conjunction with other events such as onCompositionEnd and onInput. These events allow developers to handle composition events and update the state of the component accordingly.
+        Overall, the onCompositionStart event is an essential tool in React for handling complex character input and ensuring that the component updates its state correctly.",
+        "onCompositionUpdate":"In React, the onCompositionUpdate event is used to handle updates during a composition operation, such as when the user is typing non-Latin characters or composing complex characters with multiple keystrokes. When this event occurs, it is an indication that the user is still in the middle of composing the character sequence, and the component should wait until the composition is finished before updating its state.
+        When the user is in the middle of composing complex characters, the handleCompositionUpdate function will be called, and the message "Composition updated!" will be logged to the console.
+        The onCompositionUpdate event is often used in conjunction with other events such as onCompositionStart and onCompositionEnd. These events allow developers to handle composition events and update the state of the component accordingly.
+        Overall, the onCompositionUpdate event is an essential tool in React for handling complex character input and ensuring that the component updates its state correctly. By using this event, developers can provide a better user experience for non-Latin character input and ensure that the component behaves as expected during composition.
+        To use onCompositionUpdate in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:",
+},
+        "keyboard":{
+            "onKeyDown":"In React, the onKeyDown event is used to handle when a key is pressed down. This event can be useful for a variety of purposes, such as capturing specific key combinations or preventing certain actions from occurring.
+            To use onKeyDown in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:When a key is pressed down while the input element has focus, the handleKeyDown function will be called, and the message "Key pressed!" along with the key that was pressed will be logged to the console.
+            The onKeyDown event can be used in many different ways, such as capturing specific key combinations to trigger certain actions or preventing certain actions from occurring. It can be particularly useful for building interactive web applications and games.
+            Overall, the onKeyDown event is an essential tool in React for handling key presses and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces. ",
+            "onKeyPress":"In React, the onKeyPress event is used to handle when a key is pressed down and a character is entered. This event can be useful for capturing user input and triggering actions based on the entered character.
+            To use onKeyPress in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:
+            When a character is entered while the input element has focus, the handleKeyPress function will be called, and the message "Character entered!" along with the entered character will be logged to the console.
+            The onKeyPress event can be used in many different ways, such as validating user input or triggering certain actions based on the entered character. It can be particularly useful for building forms and capturing user input.
+            Overall, the onKeyPress event is an essential tool in React for handling character input and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces.",
+            "onKeyUp":"In React, the onKeyUp event is used to handle when a key is released after it has been pressed. This event can be useful for a variety of purposes, such as triggering actions based on specific key combinations or checking for the release of certain keys.When a key is released while the input element has focus, the handleKeyUp function will be called, and the message "Key released!" along with the key that was released will be logged to the console.
+            The onKeyUp event can be used in many different ways, such as triggering specific actions when a certain key combination is pressed or updating the state of a component based on the released key. It can be particularly useful for building interactive web applications and games.
+            Overall, the onKeyUp event is an essential tool in React for handling key releases and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces.
+            To use onKeyUp in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:",
+        },
+
+        "focus":{
+            "onfocus":"In React, the onFocus event is used to handle when an element receives focus, typically through a user clicking on it or tabbing to it. This event can be useful for capturing user interaction and triggering certain actions or changes in the UI.
+            To use onFocus in React, you need to add the event listener to the target element. 
+            This can be done using JSX by defining a function that handles the event and passing it as a prop to the element:When the input element receives focus, the handleFocus function will be called, and the message "Element focused!" will be logged to the console.
+            The onFocus event can be used in many different ways, such as triggering certain UI changes or showing additional information when an element receives focus. It can be particularly useful for building forms and guiding user interaction.
+            Overall, the onFocus event is an important tool in React for capturing user interaction and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces.",
+            "onBlur":"In React, the onBlur event is used to handle when an element loses focus, typically when a user clicks outside of the element or tabs away from it. This event can be useful for capturing user interaction and triggering certain actions or changes in the UI.
+            To use onBlur in React, you need to add the event listener to the target element. This can be done using JSX by defining a function that handles the event and passing it as a prop to the element,
+            he onBlur event can be used in many different ways, such as triggering certain UI changes or validating user input when an element loses focus. It can be particularly useful for building forms and guiding user interaction.
+            Overall, the onBlur event is an important tool in React for capturing user interaction and providing interactivity to the user. By using this event, developers can create more engaging and responsive user interfaces."
+        },
+
+        "form":{
+            "onChange":"In React, the onChange event is used to handle changes in the input elements like input, select or textarea. It is a synthetic event that is triggered when the value of an input element changes.To use the onChange event in React, you first need to define a function that will be called when the event is triggered. This function should update the state of the component or do some other action based on the new value of the input element. Here is an example of using onChange with an input element:you must always use the setState function (or its equivalent, like useState) to update the state of a component. Directly modifying the state variable will not trigger a re-render of the component,
+             and can lead to unexpected behavior.",
+            "onInput":"In React, the onInput event is similar to the onChange event in that it is used to handle changes in the input elements like input, select, or textarea. The main difference between the two is that onChange is only fired when the input value changes and loses focus, while onInput is fired continuously as the user types or inputs data into the input element. using onInput event can cause frequent re-renders which can impact performance. In some cases, you might want to use onChange instead of onInput to avoid excessive re-renders, 
+            depending on your specific use case.",
+            "onSubmit":"In React, the onSubmit event is used to handle form submissions. It is typically used in combination with the form element and one or more input elements like input, select, or textarea. When a form is submitted, the onSubmit event is triggered, and the form data is sent to the server. we use the onSubmit prop to specify the function to be called when the form is submitted. We also use the preventDefault method to prevent the page from refreshing when the form is submitted.Note that when using onSubmit, you need to prevent the default form submission behavior to avoid a page refresh. You can use preventDefault to prevent the default behavior and handle the form submission manually using JavaScript.",
+
+        },
+
+        "mouse":{
+            "onClick":"In React, the onClick event is used to handle clicks on an element, such as a button or link. It is a synthetic event that is triggered when the element is clicked.",
+            "onContextMenu":"In React, the onContextMenu event is used to handle right-clicks on an element, such as a button or a div. This event is triggered when the user right-clicks on an element.",
+            "onDoubleClick":"In React, the onDoubleClick event is used to handle double-clicks on an element, such as a button or a div. This event is triggered when the user double-clicks on an element.",
+            "onDrag":"In React, the onDrag event is used to handle the dragging of an element, such as an image or a div. This event is triggered when the user starts dragging the element.",
+            "onDragEnd":"In React, the onDragEnd event is used to handle the end of a drag operation on an element, such as an image or a div. This event is triggered when the user finishes dragging the element and releases the mouse button.",
+            "onDragEnter":"In React, the onDragEnter event is used to handle the entry of a dragged element into a drop target, such as a div or an image. This event is triggered when the dragged element enters the drop target.",
+            "onDragLeave":" you can use the onDragLeave event to handle the exit of a dragged element from a drop target, such as a div or an image. This event is triggered when the dragged element leaves the drop target.",
+            "onMouseDown":"In React, the onMouseDown event is used to handle the pressing down of a mouse button on an element, such as a button or a div. This event is triggered when the user presses down a mouse button on the element.",
+            "onDragStart":"In React, the onDragStart event is used to handle the start of a drag-and-drop operation on an element, such as a div or an image. This event is triggered when the user starts to drag the element.",
+            "onMouseEnter":"In React, the onMouseEnter event is used to handle when the mouse pointer enters an element, such as a div or an image. This event is triggered when the mouse pointer enters the boundaries of the element.",
+            "onMouseLeave":"n React, the onMouseLeave event is used to handle when the mouse pointer leaves an element, such as a div or an image. This event is triggered when the mouse pointer leaves the boundaries of the element.",
+            "onMouseup":"In React, the the onMouseUp event is used to handle when the mouse button is released over an element, such as a div or an image. This event is triggered when the mouse button is released.",
+            
+        },  
+        "selection":{
+            "onselect":"",
+        },
+
+
+        "media":{
+            "onAbort":"In React, the onAbort event is used to handle when the loading of a media resource, such as an image or a video, is aborted. This event is triggered when the media resource is interrupted or canceled.",
+            "onCanPlay":"In React, the onCanPlay event is used to handle when a media resource, such as an audio or a video, can start playing without interruption. This event is triggered when enough of the media has been loaded to play smoothly.",
+            "onEmptied":"In React, the onEmptied event is used to handle when a media resource, such as an audio or a video, is emptied and its current data is discarded. This event is triggered when the media resource has been reset to its initial state.",
+            "onEncripted":"n React, the onEncrypted event is used to handle when a media resource, such as an audio or a video, is encrypted using digital rights management (DRM) technology. This event is triggered when the media resource has been successfully encrypted.",
+            "onEnded":"In React, the onEnded event is used to handle when a media resource, such as an audio or a video, has finished playing. This event is triggered when the media has reached the end of playback.",
+            "onError":"In React, the onError event is used to handle when an error occurs while loading or playing a media resource, such as an audio or a video. This event is triggered when the media resource fails to load or encounters an error during playback.",
+            "onLoadedData":"In React, the onLoadedData event is used to handle when the browser has loaded the current frame of a media resource, such as an audio or a video. This event is triggered when the media data for the current frame has been loaded and is ready to be played.",
+            "onPause":"In React, the onPause event is used to handle when a media resource, such as an audio or a video, is paused. This event is triggered when the user pauses the media playback or when the media playback is paused programmatically using the pause() method.",
+            "onPlay":"In React, the onPlay event is used to handle when a media resource, such as an audio or a video, starts playing. This event is triggered when the user clicks the "play" button or when the media playback starts programmatically using the play() method.",
+            "onprogress":"In React, the onProgress event is used to handle when a media resource, such as an audio or a video, is being loaded. This event is triggered when the browser receives more data about the media resource, indicating progress towards its completion.",
+            "onseeking":"In React, the onSeeking event is used to handle when the user starts seeking to a new position in a media resource, such as an audio or a video. This event is triggered when the user begins dragging the playback position slider or otherwise initiates a seek operation.",
+            "onsuspend":"In React, the onSuspend event is used to handle when the loading of a media resource, such as an audio or a video, has been interrupted, either due to a network error or the user pausing the loading process.",
+            "ontimeupdate":"In React, the onTimeUpdate event is used to handle when the playback position of a media resource, such as an audio or a video, has changed.",
+            "onwaiting":"In React, the onWaiting event is used to handle when the playback of a media resource, such as an audio or a video, has been delayed due to buffering.",
+        },
+
+        "image":{
+            "onload":"In React, the onLoad event is used to handle when an element, such as an image, a script, or a stylesheet, has finished loading.",
+            "onerror":"In React, the onError event is used to handle when an element, such as an image, a script, or a stylesheet, has failed to load.",
+
+        },
+        "Animation":{
+            "onAnimationStart":"n React, the onAnimationStart event is used to handle when an animation starts playing.",
+            "onAnimationEnd":"In React, the onAnimationEnd event is used to handle when an animation finishes playing.",
+            "onAnimationIteration":"In React, the onAnimationIteration event is used to handle when an animation repeats.",
+
+        },
+
+        "Transition":{
+            "onTransitionEnd":"In React, the onTransitionEnd event is used to handle when a CSS transition finishes.
+            the onTransitionEnd event is triggered when a CSS transition finishes. To handle other events related to CSS transitions, you may also need to use other transition events such as onTransitionStart and onTransitionCancel.",
+
+        },
+}
