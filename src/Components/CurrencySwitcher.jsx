@@ -1,12 +1,11 @@
 import React from "react";
 
-function CurrencySwitcher(props) {
-    return (
+function CurremcySwitcher(props) {
+    return(
         <button onClick={props.handleChangeCurrency}>
-          Current currency is {props.currency}. Change it!
-        </button>
-      )
+        Current currency is  { props.currency}. change it! </button> 
+    );
+    
 }
 
-export default CurrencySwitcher;
-
+export default CurremcySwitcher;
