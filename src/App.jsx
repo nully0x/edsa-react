@@ -1,25 +1,20 @@
 import { React, useState } from "react";
-import CurrencySwitcher from "./Components/CurrencySwitcher";
-import Display from "./Components/Display";
+import CurrencySwitcher from "./CurrencySwitcher";
+import Display from "./Display";
+import './App.css'
 
-import "./App.css";
-
-function App() {
-  const [currency, setCurrency] = useState("EUR");
-
-  const handleCurrencyChange = () => {
-    //TODO: using traditional if else statement determine the new currency
-    setCurrency(currency === "EUR" ? "USD" : "EUR");
+const App = () => {
+    
+  const [currency, setCurrency] = useState("Naira");
+  const handleCurrencyChange = (event) =>{
+      setCurrency(currency === "Naira" ? "USD" : "Naira")
   };
 
   return (
-    <div>
-      <Display currency={currency} />
-      <CurrencySwitcher
-        handleChangeCurrency={handleCurrencyChange}
-        currency={currency}
-      />
-    </div>
+      <div>
+          <Display currency={currency} />
+          <CurrencySwitcher handleChangeCurrency={handleCurrencyChange} currency={currency} />
+      </div>
   );
 }
 
