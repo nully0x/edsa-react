@@ -8,26 +8,26 @@ import Form from "./Components/Form";
 import "./App.css";
 
 function App() {
-  // const [currency, setCurrency] = useState("EUR");
+  const [currency, setCurrency] = useState("EUR");
 
-  // const handleCurrencyChange = () => {
+  const handleCurrencyChange = () => {
   //   //TODO: using traditional if else statement determine the new currency
   //   setCurrency(currency === "EUR" ? "USD" : "EUR");
-  // };
+
+  if (currency === "₤") {
+    setCurrency("$")
+  } else if (currency === "$") {
+    setCurrency("₦")
+  } else{
+    setCurrency("₤")
+  }
+  };
 
   return (
-    <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="form">Form</Link>
-      </nav>
-      <h1>This is a basic Router Setup
-      </h1>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="form" element={<Form />} />
-      </Routes>
-    </div>
+    <>
+    <Display currency={currency} />
+    <CurrencySwitcher handleChangeCurrency={handleCurrencyChange} currency={currency}/>
+    </>
   );
 }
 
