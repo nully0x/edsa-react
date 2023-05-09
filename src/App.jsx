@@ -5,6 +5,7 @@ import Display from "./Components/Display";
 import Home from "./Components/Home";
 import Form from "./Components/Form";
 import JokesApi from "./Components/JokeApi";
+import ApiMeaning from "./Components/ApiMeaning";
 
 import "./App.css";
 
@@ -22,6 +23,7 @@ function App() {
         <Link to="/">Home</Link>
         <Link to="form">Form</Link>
         <Link to="jokes-api">Jokes</Link>
+        <Link to="api-meaning">Api Meaning</Link>
 
       </nav>
       <h1>This is a basic Router Setup
@@ -30,6 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="form" element={<Form />} />
         <Route path="jokes-api" element={<JokesApi />} />
+        <Route path="api-meaning" element={<ApiMeaning />} />
       </Routes>
     </div>
   );
