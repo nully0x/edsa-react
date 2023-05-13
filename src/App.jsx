@@ -10,13 +10,30 @@ import ApiMeaning from "./Components/ApiMeaning";
 import "./App.css";
 
 function App() {
-  // const [currency, setCurrency] = useState("EUR");
+  // my traditional if/else condition
+  //   const [currency, setCurrency] = useState("Naira");
+  //   function ChangeMe (curr) {   
+  //   if (curr == "Naira") {
+  //     return "Ponds"
+      
+  //   } else { 
+  //     return "Naira"
+      
+  //   }
+  // }
+//   const handleCurrencyChange = (event) =>{setCurrency(ChangeMe(currency));
+//   };
+//   return(
+//       <div>
+//           <Display currency ={currency} />
+//           <CurrencySwitcher
+//           handleChangeCurrency={handleCurrencyChange}
+//           currency={currency} />
+//       </div>
 
-  // const handleCurrencyChange = () => {
-  //   //TODO: using traditional if else statement determine the new currency
-  //   setCurrency(currency === "EUR" ? "USD" : "EUR");
-  // };
+//   );
 
+// }
   return (
     <div>
       <nav>
