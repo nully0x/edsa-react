@@ -9,7 +9,6 @@ export default function ApiMeaning() {
        const fetchData = async () => {
               const response = await axios.get('https://raw.githubusercontent.com/nully0x/react-api-meaning/main/assigment.json');
                 setData(response.data);
-                console.log(response.data);
          };
             fetchData();
     }, []);
