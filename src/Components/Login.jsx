@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export default function Login() {
+export default function Login({onLogin}) {
     const navigate = useNavigate();
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [error, setError] = useState("");
     
     const handleSubmit = async (e) => {
@@ -27,9 +26,7 @@ export default function Login() {
             setError("Password is incorrect");
             return;
         }
-
-        localStorage.setItem("user", JSON.stringify(user)); 
-        setIsLoggedIn(true);
+        onLogin(user);
         navigate("/");
     };
 
