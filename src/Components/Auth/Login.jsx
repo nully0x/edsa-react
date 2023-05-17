@@ -27,7 +27,7 @@ export default function Login({onLogin}) {
             return;
         }
         onLogin(user);
-        navigate("/");
+        window.location.href = "/";
     };
 
   return (
