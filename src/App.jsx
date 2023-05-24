@@ -15,28 +15,20 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const user = localStorage.getItem("user");
-    if (user) {
-      setIsLoggedIn(true);
-    }
+    setIsLoggedIn(true);
   }, []);
 
-
-
-  const handleLogin = (user) => {
-    localStorage.setItem("user", JSON.stringify(user));
+  const handleLogin = () => {
     setIsLoggedIn(true);
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("user");
     setIsLoggedIn(false);
   };
 
-  const ProtectedRoute = ({path,element}) => {
-    return isLoggedIn ? element : <Navigate to="/login" />
-  }
-    
+  const ProtectedRoute = ({ path, element }) => {
+    return isLoggedIn ? element : <Navigate to="/login" />;
+  };
 
   return (
     <div>
@@ -46,16 +38,39 @@ function App() {
         <Link to="jokes-api">Jokes</Link>
         <Link to="register">Register</Link>
         <Link to="api-meaning">Api Meaning</Link>
-        <li>{isLoggedIn ? (<button onClick={handleLogout}>Logout</button>) : <Link to="login">Login</Link>}</li>
+        <li>
+          {isLoggedIn ? (
+            <button onClick={handleLogout}>Logout</button>
+          ) : (
+            <Link to="login">Login</Link>
+          )}
+        </li>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="form" element={<Form />} />
         <Route path="jokes-api" element={<JokesApi />} />
         <Route path="register" element={<Register />} />
-        <Route path="login" element={isLoggedIn ? <Navigate to="/"/> : <Login onLogin={handleLogin} />} />
-        <Route path="api-meaning" element={<ProtectedRoute path="api-meaning" element={<ApiMeaning />} />} />
-        <Route path="*" element={<h1>Not Found, go back home <Link to="/">Home</Link></h1>} />
+        <Route
+          path="login"
+          element={
+            isLoggedIn ? <Navigate to="/" /> : <Login onLogin={handleLogin} />
+          }
+        />
+        <Route
+          path="api-meaning"
+          element={
+            <ProtectedRoute path="api-meaning" element={<ApiMeaning />} />
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <h1>
+              Not Found, go back home <Link to="/">Home</Link>
+            </h1>
+          }
+        />
       </Routes>
     </div>
   );

@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -7,33 +8,29 @@ export default function Login({onLogin}) {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     
-    const handleSubmit = async (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault();
 
-        if (!username || !password) {
-            setError("Please fill in all fields");
-            return;
+        try {
+            const response = await axios.post("http://localhost:3000/api/login", {
+                username,
+                password,
+            });
+            if (response.data.error) {
+                setError(response.data.error);
+                return;
+            }
+            onLogin(response.data.user);
+            navigate("/");
+        } catch (error) {
+            throw error;
         }
-
-        const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
-        const user = existingUsers.find((user) => user.username === username);
-        if (!user) {
-            setError("User does not exist");
-            return;
-        }
-
-        if (user.password !== password) {
-            setError("Password is incorrect");
-            return;
-        }
-        onLogin(user);
-        window.location.href = "/";
     };
 
   return (
     <div>
         <h1>Login</h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleLogin}>
             <input
                 type="text"
                 placeholder="Username"
